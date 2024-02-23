@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<div class="w-full shadow-md md:w max-w-2xl mx-auto">
+			<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+				<h1 class="text-center mb-3">2 -formula asosida topuvchi formula</h1>
+				<div class="flex items-center justify-between">
+					<div class="mb-4">
+						<label class="block text-gray-700 text-sm font-bold mb-2">
+							<span class="count_x"></span> - x soni kiriting
+						</label>
+						<input
+							class="shadow input_x appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							type="number"
+							placeholder="Raqamlarni kiriting "
+						/>
+					</div>
+					<button
+						class="bg-blue-500 hover:bg-blue-700 x_add_btn text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+						type="button"
+					>
+						X Raqamni kiritish
+					</button>
+				</div>
+
+				<!-- y kirituvchi input -->
+				<div class="flex items-center justify-between">
+					<div class="mb-4">
+						<label class="block text-gray-700 text-sm font-bold mb-2">
+							<span class="count_y"></span> - y soni kiriting
+						</label>
+						<input
+							class="shadow input_y appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+							type="number"
+							placeholder="Raqamlarni kiriting "
+						/>
+					</div>
+					<button
+						class="bg-blue-500 hover:bg-blue-700 y_add_btn text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+						type="button"
+					>
+						Y Raqamni kiritish
+					</button>
+				</div>
+
+				<div class="flex">
+					(((<span class="formula_view_top"></span>)
+					<span class="formula_view_bottom"></span> )
+					<span class="formula_view_sum_x"></span>) * (((<span
+						class="formula_view_top_y"
+					></span
+					>) <span class="formula_view_bottom_y"></span> )
+					<span class="formula_view_sum_y"></span>)
+				</div>
+                <hr>
+                <div class="flex">
+                    Ildiz ostida 
+					(((<span class="formula_view_top"></span>)
+					<span class="formula_view_bottom"></span> )
+					<span class="formula_view_sum_x"></span>) <sub>2</sub> * (((<span
+						class="formula_view_top_y"
+					></span
+					>) <span class="formula_view_bottom_y"></span> )
+					<span class="formula_view_sum_y"></span>)<sub>2</sub>
+				</div>
+
+				<div class="flex gap-2">
+					<button
+						class="calculate_btn mx-auto block mt-3 bg-teal-500 hover:bg-teal-700 add_btn text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+						type="button"
+					>
+						Hisoblash
+					</button>
+					<button
+						class="resent_btn mx-auto block mt-3 bg-red-500 hover:bg-red-700 add_btn text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+						type="button"
+					>
+						Yangidan boshlash
+					</button>
+				</div>
+
+				<h2 class="text-center text-green sum_view"></h2>
+			</form>
+		</div>
+
+		<script src="test.js"></script>
+	</body>
+</html>
